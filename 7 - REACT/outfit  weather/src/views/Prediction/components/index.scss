@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #d8d8d8;
+    border-radius: 12px;
+    font-weight: 200;
+    padding: 0 1rem;
+    gap: 1rem;
+    .icon {
+        width: 5rem;
+    }
+    .location {
+        margin-right: auto;
+        font-size: 2.5rem;
+    }
+}

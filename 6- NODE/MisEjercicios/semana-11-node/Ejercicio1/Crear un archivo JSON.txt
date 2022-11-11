@@ -1,0 +1,22 @@
+// Funcion que recupera los datos del data.json
+async function getData(path) {
+  return await fs
+    .access(path, fs.constants.F_OK)
+    .then(async () => {
+      console.log('Datos del data.json');
+      console.log(JSON.parse(await fs.readFile(path)));
+    })
+    .catch(async () => {
+      console.log([]);
+    });
+}
+import fsp from 'fs/promises'
+import fs from 'fs'
+
+await fsp.access(testDir, fs.constants.F_OK);
+
+________
+
+pregunta de como poder hacer esto de verdad y compenetrarlo con front -> back end time tracking
+
+pregunta como hacer un backend en parejas

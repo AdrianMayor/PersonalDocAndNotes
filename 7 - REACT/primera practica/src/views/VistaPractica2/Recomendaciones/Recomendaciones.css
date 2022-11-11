@@ -1,0 +1,15 @@
+.recomendaciones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recomendaciones > div {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+* {
+  background-color: aqua;
+}

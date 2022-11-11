@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "minimist": "^1.2.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7"
+  },
+  "name": "semana-11-node",
+  "description": "Crea un programa de node que te permita guardar fechas con descripciones de eventos. Utiliza los argumentos del programa para introducir la fecha y el texto de forma que se guarde en un archivo .json. Añade también un argumento que imprima los eventos por pantalla.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

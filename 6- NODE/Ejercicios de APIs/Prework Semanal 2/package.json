@@ -1,0 +1,16 @@
+{
+  "name": "image-process",
+  "version": "1.0.0",
+  "description": "Utility to process images",
+  "main": "process.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Mayor",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "minimist": "^1.2.6",
+    "sharp": "^0.30.7"
+  }
+}

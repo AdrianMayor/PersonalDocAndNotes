@@ -1,0 +1,16 @@
+.clock {
+    display: grid;
+    grid-column-gap: .5rem;
+    grid-row-gap: .3rem;
+    font-weight: 200;
+    grid-template:
+        'weekDay weekDay weekDay'
+        'day month year'
+        'time time time';
+    
+    .weekDay { grid-area: weekDay;}
+    .day { grid-area: day; }
+    .month { grid-area: month; }
+    .year { grid-area: year; }
+    .time { grid-area: time; }
+}
