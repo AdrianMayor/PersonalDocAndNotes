@@ -1,0 +1,23 @@
+/* El float solo se usa a dia de hoy para colocar imagenes rodeadas de texto */
+
+
+
+/* Flota a la derecha */
+.right {
+    float: right;
+}
+
+blockquote {
+    font-size: 2rem;
+}
+
+
+/* Flota a la izquierda */
+.left {
+    float:left;
+}
+
+.clear {
+    clear:left;
+    /* clear: both; -> esto impide que flote elementos a ambos lados de algo que ya tiene float */
+}

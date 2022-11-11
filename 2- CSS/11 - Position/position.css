@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 2rem;
+    padding: 1rem;
+
+    border:1px solid black;
+
+    width: 10rem;
+    height: 10rem;
+}
+
+.relative {
+    background-color: lightblue;
+    position: relative; /* posiciona al elemnto desde el punto de partida e inicial del propio elemento  */
+
+    top: 5rem;
+    left: 10rem;
+}
+
+.absolute {
+    background-color: red;
+    position: absolute; /* posiciona al elemento teniendo en cuenta toda la pagina */
+
+    bottom: 0;
+    left: -2;
+}
+
+.fixed{
+    background-color: blue;
+    position: fixed; /* Se posiciona al elemento teniendo en cuenta la pagina y sale del flujo, manteniendose siempre en pantalla */
+
+    top: 0;
+    right: 0;
+}
+
+.sticky{
+    background-color: blueviolet;
+    position: sticky; /* Funciona parecido al fixed pero requere especificar una accion para que siga por la pantalla */
+
+    top: 5rem;
+
+}
+
+
+

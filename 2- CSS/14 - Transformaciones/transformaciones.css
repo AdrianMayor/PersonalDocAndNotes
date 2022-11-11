@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    border: 1px solid black;
+    background-color: cyan;
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+/* SCALE */
+/* Escala o agranda multiplicandolo por el valor que este entre parentesis. Por defecto es uno */
+
+div:nth-child(2) {
+    transform: scale(1.5); /* escala a lo largo y hancho */
+}
+
+div:nth-child(3) {
+    transform: scaleX(2) scaleY(1.5); /* amplia el eje indicado */
+}
+
+
+/* TRANSLATE */
+/* mueve un elemento */
+
+div:nth-child(4) {
+    transform: translate(5rem, -5rem); /* horizontal (positivo -> derecha/ negativo -> izquierda) | vertical (positivo -> abajo / negativo -> arriba) */
+}
+
+div:nth-child(5) {
+    transform: translateX(20rem) translateY(-10rem);
+}
+
+
+/* ROTATE */
+/* Rota un elemento, se indica en deg (grados) */
+
+div:nth-child(6) {
+    transform: rotate(45deg);
+}
+
+
+/* SKEW */
+/* tuerce un elemento. Mas bien lo rota pero sobre el eje z */
+
+div:nth-child(7) {
+    transform: skew(35deg);
+}
+
+div:nth-child(8) {
+    transform: skewX(45deg) skewY(35deg);
+}
+
+
+
+div:nth-child(9) {
+    transform: translateX(20rem, -60rem) rotate(35deg) ;
+    
+    transform-origin: botom right; /* se establece desde donde se va a transformar  */
+}

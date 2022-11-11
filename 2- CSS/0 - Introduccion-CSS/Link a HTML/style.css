@@ -1,0 +1,55 @@
+/* selector {
+    propiedad: valor;
+    otra propiedad: valor;
+} */
+
+@import url(encabezado.css);
+
+
+/* 1. SELECTOR POR TIPO DE ELEMENTO */
+p {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: red;
+}
+
+strong {
+    font-size: 2rem;
+}
+
+em {
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 2. SELECTOR POR CLASE */
+.importante {
+    font-weight: bold;
+}
+
+li.importante {
+    text-decoration: underline;
+}
+
+.grande {
+    font-size: 1.5rem;
+}
+
+/* 3. SELECTOR POR ID */
+#unico {
+    background-color: green;
+}
+
+p#unico {
+    color: white;
+}
+
+li#lista {
+    color: aqua;
+}

@@ -1,0 +1,46 @@
+@import url(./encabezado.css);
+
+p, li {
+    color:blue;
+}
+
+/*Los elementos que sean hijos */
+
+div{
+    border: 1px solid black;
+    margin: 5px 0px;
+}
+
+div a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Hijop directos*/
+
+main p {
+    background-color: red;
+}
+
+/*Los elementos que sean hijos directos de main*/
+
+main > a {
+    font-size: 1.5rem;
+}
+
+/*Hermanos adyacentes*/ 
+/*esto quiere decir el elemento posterior*/
+p + a {
+     color:white;
+}
+
+/*Los siguientes parrafos despues de un a. Hermanos (siempre los siguientes) porque CSS lee siempre de arriba para abajo*/
+
+ a ~ p {
+    text-decoration: underline;
+}
+
+:checked + label{
+    font-weight: bold;
+}
+

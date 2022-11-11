@@ -1,0 +1,16 @@
+.importante {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.grande {
+    font-size: 2rem;
+}
+
+.borde {
+    border: 2px solid black;
+}
+
+.rojo{
+    color:red;
+}

@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: yellow;
+}
+
+h1 {
+    color: blue;
+    font-size: 3rem;
+
+    transition: color 2s ease-in 1s, 
+                transform 2s ease-in 1s; 
+
+    /* transition-property: color, transform;
+    transition-duration: 2s, 5s;
+    transition-timing-function: ease-out, ease-in; */
+    transition-delay: 0s, 2s;
+}
+
+h1:hover {
+    color: red;
+
+    /* transition: propiedad y duracion (segundos o milisegundos); */ 
+    
+    /* Debe ir en el elemento sin el hover para que no haga solo el efecto con el hover */
+}
+
+header:hover h1{
+    transform: translate(20rem);
+}
+
+
+div {
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 1rem;
+
+    transition: transform 2s;
+}
+
+div:hover {
+    transform: rotate(180deg);
+}

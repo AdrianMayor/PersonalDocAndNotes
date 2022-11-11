@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    /* va por orden: html */
+}
+
+body {
+    /* luego va el body */
+    background-image: url('https://source.unslpash.com/random');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 2rem;
+
+    width: 10rem;
+    height: 10rem;
+
+    display:inline-block;
+}
+
+#color {
+    background: blueviolet;
+
+    /* horizontal - vertical - difuminado - color */
+    box-shadow: 10px -10px 3px rebeccapurple;
+}
+
+.img {
+    background-color: blueviolet;
+    background-image: url('https://png.pngtree.com/background/20210712/original/pngtree-abstract-modern-neon-frame-background-picture-image_1178251.jpg');
+}
+
+.size {
+    background-size: 100% 100%;
+}
+
+.no-repeat {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.img2 {
+    background-image: url('https://source.unsplash.com/30x30');
+    background-repeat: no-repeat;
+}
+
+.size2{
+    background-size: 50%;
+    background-position: top 2rem right;
+}
+
+.contain{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.varias-img {
+    background-image: url('../../Mis\ ejercicios/Mi-sitio-web/icons/eye.png'), url('https://source.unsplash.com/300x300');
+
+    background-position: center;
+    background-size: contain;
+}

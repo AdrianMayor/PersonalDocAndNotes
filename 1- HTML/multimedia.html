@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <header>
+        <h1>Multimedia</h1>
+        <main>
+            <section>
+                <h2>Imagenes</h2>
+
+                <h3>JPEG y JPG</h3>
+                <p>Este es el formato mas apropiado para las fotos</p>
+                <p>Lo mas comun para poner una imagen es "img src="" alt=""</p>
+                <img src="" alt="Imagen">
+
+                <p>Tambien podemos usar una URL de internet</p>
+                <img src="URL" alt="URL externa">
+
+                <h3>PNG</h3>
+                <p>Para colores planos ademas que no tienen fondo (son transparentes)</p>
+
+                <figure>
+                    <img src="" alt="Imagen">
+                    <figcaption>Pie de foto</figcaption>
+                </figure>
+
+                <h3>GIF</h3>
+                <p>Es para animaciones</p>
+
+                <img src="" alt="Gif">
+
+                <h3>SVG</h3>
+                <p>Imagenes en formato vectorial y podemos añadirlas de dos formas:</p>
+
+                <h4>como una imagen normal con etiqueta img</h4> <!--Recomendado-->
+                <img src="" alt="imgaen vectorial">
+
+                <h4>añadirla como un SVG</h4>
+                <p>Copiando y pegando el codigo de la imagen</p>
+
+                <p>la diferencia entre una y otra es que el codigo svg se puede modificar, (Formato hexadecimal)</p>
+                
+            </section>
+
+
+            <section>
+                <h2>Atributos Audio y video</h2>
+                <ul>
+                    <li>
+                        <strong>autoplay</strong>: Inicia el audio o video automaticamente
+                    </li>
+                    <li>
+                        <strong>controls</strong>: Añade un controlador para el audio o video
+                    </li>
+                    <li>
+                        <strong>loop</strong>: Reproduce en bucle audio o video
+                    </li>
+                    <li>
+                        <strong>muted</strong>: Por defecto el audio esta muteado
+                    </li>
+                    <li>
+                        <strong>poster</strong>: Atributo para poner miniaturas o imagen que se ve hasta que comienza en video (solo video)
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Audio</h2>
+
+                <audio src="" autoplay controls loop muted>
+                    Tu navegador no soporta audio
+                </audio>
+            </section>
+
+            <section>
+                <h2>Video</h2>
+                <small>Funciona practicamente igual que el audio</small>
+
+                <video src="" autoplay controls muted loop poster="">
+                    <!--El atributo poster es para que ponga una imagen mientras carga el video o cuando no se le da reproduccion-->
+                    Tu navegador no soporta video 
+                </video>
+                
+            </section>
+
+            <section>
+                <h2>iFrame</h2> <!--Por ejemplo enlaces a videos de youtube-->
+
+                <p>La etiqueta iframe nos sirve para incrustar imagenes, videos, paginas web y textos</p>
+                <ul>
+                    <li>
+                        <h3>imagenes</h3>
+
+                        <iframe src="" frameborder="0">
+                            Tu navegador no soporta iframe
+                        </iframe>
+                    </li>
+                    <li>
+                        <h3>Videos</h3>
+
+                        <iframe src="" frameborder="0">
+                            Tu navegador no soporta iframe
+                        </iframe>
+                    </li>
+                    <li>
+                        <h3>HTML (Paginas externas)</h3>
+
+                        <iframe src="" frameborder="0">
+                            Tu navegador no soporta iframe
+                        </iframe>
+                    </li>
+                    <li>
+                        <h3>Texto (pdf)</h3>
+
+                        <iframe src="" frameborder="0">
+                            Tu navegador no soporta iframe
+                        </iframe>
+
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </header>
+    
+</body>
+</html>

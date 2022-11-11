@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+
+    <main>
+
+        <h2>Atributos comunes</h2>
+
+        <ul>
+            <li>
+                <strong>placeholder</strong> Es un texto de ayuda, no se envia ni da valor al campo
+            </li>
+            <li>
+                <strong>required</strong> Impide enviar el formulario hasta que se complete ese campo
+            </li>
+            <li>
+                <strong>readonly</strong> solo permite leer el campo, no modificarlo
+            </li>
+            <li>
+                <strong>value</strong> Da un valor por defecto
+            </li>
+            <li>
+                <strong>autofocus</strong> Seleccionar automaticamente un campo al cargar la pagina para editarlo
+            </li>
+            <li>
+                <strong>disabled</strong> Deshabilita el campo, no permite ni siquiera seleccionarlo, no lo envia.
+            </li>
+        </ul>
+        <form action="#" method="post"> <!--GET pasa los datos con las variables a la url y POST se envia encriptado y por detras, mas seguro-->
+
+            <fieldset> <!---->
+                <legend>Datos principales</legend>
+                <p>Podemos organizar el formulario con la etiqueta fieldset</p>
+
+                <p>Vinculamos el label utilizando for con el input, utilizando id</p>
+                <ul>
+                    <li>
+                        <label for="username">Nombre:</label>
+                <input type="text" name="nombre" id="username" placeholder="Ecribe aqui tu nombre" autofocus disabled>
+                    </li>
+                    <li>
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" name="password" id="pass" required>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" value="Correo@misitio.com" readonly>
+                    </li>
+                </ul>
+                
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Otros datos</legend>
+                <ul>
+                    <li>
+                        <label for="url">WEB</label>
+                        <input type="url" name="web" id="url">
+                    </li>
+                    <li>
+                        <label for="search">Busqueda de término</label>
+                        <input type="search" name="search" id="search" placeholder="Esto es para la busqueda de terminos">
+                    </li>
+                    <li>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="tel" id="telefono">
+                    </li>
+                    <li>
+                        <label for="nacimiento">Fecha nacimiento</label>
+                        <input type="date" name="nac" id="nacimiento">
+                    </li>
+                    <li>
+                        <label for="color">Color</label>
+                        <input type="color" name="" id="color">
+                    </li>
+                    <li>
+                        <label for="num">Numeros</label>
+                        <input type="number" name="number" id="num" min="3" max="8">
+                    </li>
+                    <li>
+                        <label for=""></label>
+                        <input type="file">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Campos diferentes</legend>
+                <ul>
+                    <li>
+                        <label for="volumen">Volumen</label>
+                        <input type="range" name="volumen" id="volumen" min="-10" max="10" step="10">
+                    </li>
+                    <li>
+                        <label for="anhos"></label>
+                        <select name="anhos" id="anhos">
+                            <option value="1">1990</option> <!--El valor value es lo que se envia, el texto en blanco es lo que es visible en la pagina-->
+                            <option value="2">1991</option>
+                            <option value="3">1992</option>
+                            <option value="4">1993</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="coches">Selecciona tu coche</label>
+                        <select name="car" id="coches">
+                            <optgroup label="Coches BMW">
+                                <option value="330">BMW 330</option>
+                                <option value="M2">BMW M2</option>
+                            </optgroup>
+                            <optgroup label="Coches Audi">
+                                <option value="RS6">Audi RS6</option>
+                                <option value="A3">Audi A3</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="anhos2">Años</label>
+                        <select name="anhos2" id="" multiple>
+                            <option value="1">1990</option> <!--El valor value es lo que se envia, el texto en blanco es lo que es visible en la pagina-->
+                            <option value="2">1991</option>
+                            <option value="3">1992</option>
+                            <option value="4">1993</option>
+
+                        </select>
+
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Checkbox</legend>
+                <ul>
+                    <li>
+                        <label for="Rojo">Rojo</label>
+                        <input type="checkbox" name="color3" value="Rojo">
+                        <label for="Amarillo">Amarillo</label>
+                        <input type="checkbox" name="color3" value="Amarillo"id="Amarillo">
+                        <label for="azul"></label>
+                        <input type="checkbox" name="color3" value="azul" id="azul">
+
+                    </li>
+                    <label for="newsletter">Suscribete a nuestro Newsletter</label>
+                    <input type="newsletter" id="newsletter">
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Radio</legend>
+                <ul>
+                    <li>
+                        <label for="manhana">Mañana</label>
+                        <input type="radio" name="horario"  id="manhana" value="Mañana">
+                    </li>
+                    <li>
+                        <label for="tarde">Tarde</label>
+                        <input type="radio" name="horario"  id="tarde" value="tarde">
+                    </li>
+                    <li>
+                        <label for="noche">Noche</label>
+                        <input type="radio" name="horario"  id="noche" value="noche">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+
+        </form>
+    </main>
+    
+</body>
+</html>

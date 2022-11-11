@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas: 
+        "imagen" 
+        "parrafo";
+}
+
+img {
+    grid-area: imagen;
+}
+
+p {
+    grid-area: parrafo;
+
+    background-color: red;
+}
+
+div {
+    padding: 2rem;
+    background-color: red;
+}
+
+@media (min-width: 650px) {
+    body {
+        grid-template-areas: 
+        "imagen parrafo";
+    }
+
+    p {
+        background-color: blue;
+    }
+}

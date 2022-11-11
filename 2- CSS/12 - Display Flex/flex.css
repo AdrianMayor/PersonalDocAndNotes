@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div {
+    border: 1px solid black;
+    width: 5rem;
+    height: 5rem;
+}
+
+body {
+    display: flex;
+
+    height: 100vh;
+
+    flex-direction: row; /* valor por defecto */
+
+    flex-wrap: wrap; /* funciona similar a inline-block, cuando los elementos no entran horizontalmente los empuja y crea otra fila o columna */
+
+    /* RAMA PRINCIPAL */
+    justify-content: space-around; /* Justify se aplica sobre la rama X o Y principal segun sea column o row */
+
+
+    /* RAMA SECUNDARIA */
+    align-items: center ; /* align se aplica sobre la rama X o Y segundaria determinado por y segun sea column o row */
+ 
+    /*
+    - space-around -> espacio alrededor de los div
+    - space-between -> espacio solo entre los elementos 
+    - space-evenly -> el espacio se distribuye uniformemente
+     */
+
+
+}
+
+div:nth-child(4) {
+    align-self: flex-start;
+
+    order: 1;
+
+    
+}
+
+div:nth-child(5) {
+    align-self: flex-start;
+
+    order: 1;
+
+    /* flex-grow: 1; */
+
+    /* grow:crece - shrink:para que no encoja mas - basis: funciona como un min-width  */
+    flex: 1 0 200px;
+    
+}
+
+div:nth-child(8){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 2;
+    flex-shrink: 0;
+}

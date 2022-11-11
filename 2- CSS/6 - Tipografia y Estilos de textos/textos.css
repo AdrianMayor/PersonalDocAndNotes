@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap'); /* Aqui meteriamos el enlace de google fonts o de donde sea */
+
+/* @font-face{
+    font-family:'harryp';
+    src:url(../fonts/HARRYP__.TTF)
+} */
+
+@font-face {
+    font-family: 'harry_pregular';
+    src: url('../fonts/harryp__-webfont.woff2') format('woff2'),
+         url('../fonts/harryp__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 2rem;
+    padding:1.5rem;
+}
+
+h1{
+    text-align: center; /* No lo alinea al centro de la pagina como tal sino al centro de la etiqueta */
+
+    font-family: Arial, Helvetica, sans-serif; /* sin serifa (rabitos en las letras) */
+
+    margin-bottom: 1.2rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 1rem;
+    
+}
+
+.harry{
+    font-family: 'harryp';
+
+    font-size:2rem;
+    /* letter-spacing: 2rem;  Espacio entre letras*/
+    text-indent: 2rem; /* sangrado */
+    text-align: justify; /* Texto justificado */
+    /* text-align: center; */ /* çTexto centrado */
+
+    line-height: 1.7; /* Separa lineas arriba y abajo */
+}
+
+
+
+span{
+    /* Decoraciones de textos */
+    /* text-decoration: underline; */
+    /*  text-decoration: overline;
+    text-decoration: line-through; */
+    /* text-decoration: underline wavy red; */
+    /* text-decoration-line: line-through;
+    text-decoration-style:dotted ;
+    text-decoration-color: blue; */
+
+    text-decoration: line-through underline overline dotted red;
+
+
+}
+
+p:last-child{
+
+    font-size: 2rem;
+    /* font-family: serif;  *//* Con serifa */
+    /* font-family: sans-serif; Sin serifa */
+    /* font-family: monospace; Se usa para el codigo */
+    /* font-family: cursive; se usa para manuscritos, imita la caligrafia humana */
+    font-family: fantasy; /*  */
+
+    /* text-transform: capitalize; Pone cada palabra con la primera letra en mayuscula
+    text-transform: lowercase; Pone todas las letras en minusculas */
+    text-transform: uppercase; /* Pone todas las letras en mayusculas */
+
+
+    /* desplazamiento horizontal | desplazamienmto vertical | difuminado */
+    /* recomendado trabajar con los pixeles */
+    text-shadow: -6px -10 2px magenta;
+
+}

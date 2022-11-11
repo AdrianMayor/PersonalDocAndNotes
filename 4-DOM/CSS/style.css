@@ -1,0 +1,34 @@
+html{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.dark{
+    background-color: black;
+    color:white;
+}
+
+.light{
+    background-color: cyan;
+    color: white;
+}
+
+
+li {
+    transition: all 1s;
+}
+
+.grande{
+    font-size: 2rem;
+}
+
+.rojo {
+    color:red;
+    /* transition: color 1s; */
+}
+
+.importante {
+    font-weight: bold;
+    text-decoration: underline;
+}
