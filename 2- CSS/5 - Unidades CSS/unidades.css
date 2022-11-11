@@ -1,0 +1,90 @@
+@import url(./normalize.css);
+
+
+
+
+div{
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 2rem;
+
+    font-size: 20px;
+}
+
+
+p{
+    text-align: center;
+}
+
+/* Pixeles */
+/* no es responsive, simplemente se mantiene siempre fija al tamaño establecido */
+
+.px{
+    width: 200px; /* ancho */
+    height: 200px; /* alto */
+}
+
+/* em */
+
+.em{
+    /* en relacion al tamaño del texto del elemento */
+
+    width: 10em;
+    height: 10em;
+
+}
+
+/* .rem */
+
+.rem{
+    /* en relacion al tamaño del texto del html */
+    /* recomendado por tema de adaptacion movil */
+
+    width: 10rem;
+    height: 10rem;
+}
+
+h2{
+    border:solid black 1px;
+}
+
+.em h2{
+    padding: 0.5em;
+}
+
+.rem h2{
+    padding: 0.5rem;
+}
+
+/* vw */
+
+.vw{
+    /* coge todo el tamaño de la pantalla a lo ancho, no toma en cuenta margenes, padding ni nada*/ 
+    width: 25vw;
+    height: 25vw;
+
+    margin:0;
+    padding:0;
+}
+
+/* vh */
+
+.vh{
+     /* coge todo el tamaño de la pantalla a lo largo, no toma en cuenta margenes, padding ni nada*/ 
+    width: 50vh;
+    height: 50vh;
+
+    margin:0;
+    padding:0;
+}
+
+/* porcentaje */
+
+.porcentaje{
+
+    height: 200%; /* Los porcentajes no pueden tener alto, porque por defecto se tiene un valor por defecto de alto */
+    width: 50%;
+
+    font-size: 200%;
+    padding:20%;
+}

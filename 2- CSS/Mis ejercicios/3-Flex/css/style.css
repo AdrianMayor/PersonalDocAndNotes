@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../img/hamburguesa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+
+    font-family: 'Rubik', sans-serif;
+    
+    color: #193E59;
+}
+
+form {
+    margin: auto;
+    min-width: 50vw;
+    max-width: 70vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form fieldset {
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 1rem;
+}
+
+form > fieldset > fieldset {
+    flex-direction: row;
+}
+
+form > fieldset > legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form fieldset legend {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+
+form > fieldset > fieldset label {
+    margin-left: 1rem;
+    margin-right: 0.4rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+form > fieldset > fieldset > legend,
+label {
+    font-style: italic;
+}
+
+form > fieldset:nth-child(2) input {
+    margin: 0.5rem 0;
+} 
+
+form > fieldset:nth-child(2) input,
+form > fieldset:nth-child(2) textarea {
+    min-width: 45vw;
+    max-width: 50vw;
+
+    padding: 0.5rem;
+
+    font-family: inherit;
+}
+
+form > fieldset:nth-child(2) textarea {
+    height: 100px;
+    margin-top: 0.5rem;
+}
+
+form > fieldset > select {
+    padding: 0.5rem 1rem;
+    
+    color: #193E59;
+    font-weight: bold;
+}
+
+form button {
+    width: 5rem;
+    margin: auto;
+
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #193E59;
+    color: white;
+    font-weight: bold;
+}

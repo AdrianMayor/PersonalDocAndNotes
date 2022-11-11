@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+div {
+    border: 1px solid black;
+}
+
+section {
+    margin: 5rem 0;
+
+    display:grid;
+}
+
+#fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    /* Establece las columnas con el minimo y maximo que le hemos establecido, en este caso el minimo es 100px y si la pagina crece ocupara toda la pagina */
+}
+
+#fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+    /* Funciona casi igual que el fit, pero cuando la pantalla crece demasiado no hace crecer las celdas sino que crea espacios para columnas aunque sean creadas vacias */
+}

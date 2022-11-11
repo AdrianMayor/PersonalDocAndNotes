@@ -1,0 +1,70 @@
+<!--Crear un horario de clases con al menos tres dias (lunes a miercoles) y tres clases diferentes al dia, ademas habra un recreo todos los dias a la misma hora. la tabla debe mostrar los dias y las horas-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio Tabla</h1>
+    </header>
+    <main>
+    <section>
+        <table border="1"> <!--Se ve en rojo porque esto es CSS y deberia hacerse en CSS-->
+            <caption>
+                Horario Escolar
+            </caption>
+            <thead>
+                <tr>
+                    <th>Horas</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>8:00-9:00</th>
+                    <td rowspan="2">Lengua</td>
+                    <td rowspan="2">Lengua</td>
+                    <td >Ciencias</td>
+                </tr>
+                <tr>
+                    <th>9:00-10:00</th>
+                    <td >Lengua</td>  
+                </tr>
+                <tr>
+                    <th>10:00-11:00</th>
+                    <td colspan="3">Recreo</td>
+                </tr>
+                <tr>
+                    <th>11:00-12:00</th>
+                    <td rowspan="2">Ciencias</td>
+                    <td>Matematicas</td>
+                    <td >Tutoria</td> 
+                </tr>
+                <tr>
+                    <th>12:00-13:00</th>
+                    <td rowspan="2">Ciencias</td>
+                    <td rowspan="2">Matematicas</td>
+                </tr>
+                <tr>
+                    <th>13:00-14:00</th>
+                    <td >Matematicas</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Observaciones:</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+</main>
+    
+</body>
+</html>

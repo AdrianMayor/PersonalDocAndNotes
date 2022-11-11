@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* html{
+    font-size: 8px;
+} */
+
+h1{
+    border: 10px solid black;
+
+/*     border:1px;
+    border-style: solid;
+    border-color: black; */
+
+    margin: auto; /* a los lados toma el margen que quiera y lo centra */ 
+
+    padding: 2rem;
+
+    width: 300px;
+
+    height: 10rem;
+
+}
+
+        /* OVERFLOW */
+
+p{
+    border: 1px solid blue;
+    margin:2rem;
+    padding: 2rem;
+
+    height: 10rem;
+    width: 50vw;
+
+}
+
+#hidden{
+    overflow: hidden; /* esconde el contenido sobrante y no se puede acceder */
+}
+
+#auto{
+    overflow: auto; /* esconde el contenido sobrante y añade un scroll vertical. Y si la pagina crece para mostrar todo el contenido desaparece el scroll. */ 
+}
+
+#scroll{
+    overflow: scroll; /* esconde el contenido sobrante y añade scroll vertical y vertical. Aunque la pagina se agrande haciendo que se vea todo el contenido el scroll no desaparece */
+}
+
+#visible{
+    overflow: visible; /* comportamiento por defecto, todo lo sobrante se muestra fuera de la caja */
+}

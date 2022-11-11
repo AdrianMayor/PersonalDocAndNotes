@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debrable</title>
+  </head>
+  <body>
+    <header>
+      <h1>Debrable</h1>
+
+      <nav>
+        <menu>
+          <li>
+            <a href="#top-peliculas" title="Enlace a mi top 10 pelis"
+              >Mi TOP 10 películas</a
+            >
+          </li>
+          <li><a href="#japon">Mi Viaje a Japón</a></li>
+          <li><a href="#contacta">Mándame un mensaje</a></li>
+        </menu>
+      </nav>
+    </header>
+
+    <main>
+      <article id="top-peliculas">
+        <h2>Mi TOP 10 Películas</h2>
+        <ol>
+          <li>El Padrino</li>
+          <li>La lista de Shindler</li>
+          <li>El padrino parte 2</li>
+          <li>Cadena Perpetua</li>
+          <li>Pulp Fiction</li>
+        </ol>
+      </article>
+
+      <article id="japon">
+        <h2>Mi Viaje a Japón</h2>
+
+        <img
+          src="https://source.unsplash.com/300x300"
+          alt="Foto del viaje a Japón"
+        />
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+          architecto quibusdam corrupti distinctio facilis dolor obcaecati
+          aliquid accusantium veritatis neque!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          aspernatur temporibus alias corrupti possimus dolore nesciunt corporis
+          earum libero pariatur!
+        </p>
+      </article>
+
+      <aside>
+        <img
+          src="http://source.unsplash.com/100x100?face-woman"
+          alt="Imagen de perfil"
+        />
+        <h2>Debra Smith</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+          sint.
+        </p>
+        <p>
+          <a href="mailto:debra.smith@example.com">debra.smith@example.com</a>
+        </p>
+      </aside>
+      <section id="contacta">
+        <h2>Mándame un mensaje</h2>
+
+        <form action="#" method="post">
+          <ul>
+            <li>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" required />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </li>
+            <li>
+              <label for="fecha">Fecha de nacimiento</label>
+              <input
+                type="text"
+                name="fecha"
+                id="fecha"
+                required
+                placeholder="DD/MM/AAAA"
+              />
+            </li>
+            <li>
+              <label for="coments">Comentarios</label>
+              <textarea
+                name="comentarios"
+                id="coments"
+                cols="80"
+                rows="10"
+              ></textarea>
+            </li>
+            <li>
+              <input type="checkbox" name="suscribe" id="suscribe" />
+              <label for="suscribe">Suscríbete a la newsletter</label>
+            </li>
+            <li>
+              <button type="submit">Enviar</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <footer>Términos y condiciones | Política de privacidad</footer>
+  </body>
+</html>

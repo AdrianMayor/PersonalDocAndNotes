@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(https://);
+}
+
+div{
+    border:1px solid black;
+    margin: 2rem;
+    padding: 2rem;
+
+    width: 15rem;
+    height: 15rem;
+}
+
+/* NOMBRE */
+
+#nombre{
+    background-color: lightskyblue;
+}
+
+
+/* HEXADECIMAL */
+
+#hexa{
+    /* #0-9 A-F */
+    background-color: #99FF12;
+    /* 00-99 y AA-FF */
+}
+
+/* RGB */
+
+#rgb{
+    background-color: rgb(255, 200, 159);
+    /* rgb(20%, 70%, 46%) */
+}
+
+/* RGBa */
+
+#rgba{
+    background-color: rgba(255, 125, 0, 0.5 ); 
+    /* La transparencia va de 0 a 1, con decimales */
+}
+
+/* HEXADECIMAL CON APLHA */
+
+#hexaaplha{
+    /* # 00 - 99 y AA - FF */
+
+    background-color: #8910FF80;
+}
+
+/* HEXADECIMAL ABREVIADO */
+
+#hexaabr{
+    /* Solo se puede utilizar si las parejas se repiten */
+
+    background-color: #9f8;
+}

@@ -1,0 +1,153 @@
+@import url(./encabezado.css);
+
+[title] {
+    color:cyan;
+}
+
+[lang="gl"]{
+    color:lightgreen;
+    background-color: black;
+}
+
+P[lang] {
+    font-size:_ 1.2rem;
+}
+
+p[lang="en"] {
+    font-style: italic;
+}
+
+/* Seleccionamos atributos cuyo valor empiece por...*/
+
+[href^="http"] {
+    color:red;
+    text-decoration: none;
+}
+
+/*Seleccionamos los elementos cuyo valor acabe por...*/
+
+[href$="org"]{
+    color:black;
+    background-color: cyan;
+}
+
+/* Seleccionamos los elementos cuyo valor contenga...*/
+
+[href*="dex"] {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:beige;
+    background-color: salmon;
+}
+
+/* 4. Pseudo-clases*/
+
+/*Seleccionar el primer hijo li*/
+li:first-child{
+    font-weight: bold;
+}
+
+/*Seleccionar el ultimo hijo li*/
+
+li:last-child{
+    font-style: italic;
+}
+
+/*Seleccionar un hijo li contando desde el inicio*/
+
+li:nth-child(4){
+    background-color: cyan;
+    font-size:1.2rem;
+}
+
+/*Seleccionar un hijo contando desde el final li*/
+
+li:nth-last-child(3){
+    background-color: blueviolet;
+    font-size: 1.2rem;
+}
+
+li:nth-child(even){
+    color:gold ;
+    background-color: black;
+}
+
+
+
+div{
+    border: 1px solid black;
+    margin: 5px 0px;
+
+}
+
+/* pseudoclases por tipo  */
+
+a:last-of-type{
+    text-decoration: none;
+    color: black;
+}
+
+div :last-child:not(a) {
+    background-color: red;
+}
+
+li:not(.excepcion) {
+    background-color: blueviolet;
+}
+
+:checked {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+button:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+p:active{
+    background-color: rebeccapurple;
+}
+
+:focus{
+    border:10px solid green;
+}
+
+:required{
+    border:2px solid red;
+    border-radius: 10px;
+}
+
+button{
+    border-radius: 10px;
+}
+
+/* PSEUDO-ELEMENTOS*/
+
+p::first-letter{
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+p::first-line{
+    font-style: italic;
+}
+
+::selection{
+    background-color: red;
+}
+
+a::before{
+    content:"😃";
+}
+
+li::after{
+    content: "contenido añadido con pseudo-elemento";
+    color: white;
+}
+
+input::placeholder{
+    color:blueviolet;
+}
+

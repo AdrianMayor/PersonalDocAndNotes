@@ -1,0 +1,73 @@
+/* CASCADA
+
+Importancia */
+
+h1{
+    color:red !important;
+}
+
+h1 {
+    color:blue;
+}
+
+/* Especifidad */
+
+p{
+/* especifidad  1*/
+ background-color: red;
+}
+
+.parrafo{
+    /* especifidad 10 */
+    background-color: blue;
+}
+
+p.parrafo{
+    /* especifidad de 1 + 10 */
+    background-color: green;
+}
+
+#unico{
+    /* especifidad 100 */
+    background-color: aqua;
+}
+
+p#unico{
+    /* especifidad de 1 + 100 */
+    background-color: chocolate;
+}
+
+/* HERENCIA */
+
+ul{
+    color:red;
+}
+
+li{
+    color: blueviolet;
+}
+
+*{
+    text-decoration: none;
+}
+
+/* podemos decidir si heredar o no */
+
+div{
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div p{
+    border:inherit; /* que herede el borde */
+    font-family:initial; /* decidimos que no herede el tipo de texto */
+}
+
+a:visited{
+    color: magenta;
+}
+
+a:hover {
+    /* Si esta propiedad se encuentra por encima del visited o cualquier otra propiedad relativa a los enlaces el hover no aplica */
+    color: blue;
+}

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --colorPrimario: red;
+    --colorFondoSection: #AA2377;
+    --miBackground: yellow;
+    --miBackground2:gray;
+
+    --miBorde:1px solid black;
+
+    --sombreado: 2px 2px 5px var(var(--colorPrimario));
+
+    --altoHeader:5rem;
+    --altoFooter:2rem;
+    --miRelleno:1rem;
+}
+
+html.darkmode {
+    --colorPrimario: rgb(70, 3, 3);
+    --miBackground:rgb(75, 75, 4);
+}
+
+header {
+    height: var(--altoHeader);
+    background-color: var(--miBackground2);
+}
+
+h1 {
+    color: var(--colorPrimario);
+    text-shadow: var(--sombreado);
+}
+
+main {
+    background-color: var(--miBackground);
+    height: calc(100vh -var(--altoHeader) - var(--altoFooter));
+}
+
+/* calc() -> calcula */
+
+footer {
+    height: var(--altoFooter);
+    background-color: var(--miBackground2);
+    padding: calc(var(--miRelleno)*2);
+}
+
+div {
+    border: var(--miBorde);
+    height: 10rem; /* var(--altoHeader); */
+    width: 10rem; /* var(--altoFooter); */
+    margin: 2rem;
+
+
+    /* MIN -> escoge el valor mas pequeño de los 2 */
+
+    width: min(10rem, 20vw);
+
+    /* MAX -> siempre se queda con el valor mas grande */
+
+    padding: max(1rem, 5vw);
+}
+
+p {
+
+    /*  minimo, lo que queremos que mida por defecto (medida dinamica), cuanto mide de maximo */
+    font-size: clamp(1rem, 5vw , 2rem);
+}

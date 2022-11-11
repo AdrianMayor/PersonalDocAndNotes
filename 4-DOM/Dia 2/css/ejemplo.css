@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article {
+    margin:2rem;
+    position: relative;
+}
+
+header {
+    margin: 1rem;
+}
+
+button {
+    position: absolute;
+    right:0;
+
+    width: 2rem;
+    height: 2rem;
+}
+
+img {
+    width: 100%;
+}

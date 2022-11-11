@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+
+    grid-template-areas:
+        "blue blue gray"
+        "green green red"
+        "green green red";
+}
+
+div {
+    border: 1px solid black;
+}
+
+#rojo {
+    background-color: red;
+    grid-area: red;
+}
+
+#azul {
+    background-color: blue;
+    grid-area: blue;
+}
+
+#verde {
+    background-color: green;
+    grid-area: green;
+}
+
+#gris {
+    background-color: gray;
+    grid-area:gray;
+}
+
+/* No se puede crear "L" , tienen que ser cuadrados, si se crean "L" peta. Ej:
+
+"blue blue gray"
+"green blue red"
+"green green gray"
+
+*/

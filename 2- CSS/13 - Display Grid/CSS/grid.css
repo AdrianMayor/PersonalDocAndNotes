@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: grid;
+
+    /* grid-template-columns: 200px 2rem 100px; */ /* Esto crea columnas en la cuadricula de grid */
+
+    
+    /* grid-template-rows: 100px 5rem; */ /* Esto crea filas enn la cuadricula de grid */
+
+    grid-template-columns: repeat(3, 100px) 1fr;
+    grid-template-rows: repeat(2, 200px 2rem);
+    grid-auto-rows: 50px;
+
+    /* El fr es una unidad de medida solo para grid, con 1fr puede crecer hasta el borde de la pantalla. Si hay varios fr se reparten equitativamente todo el espacio que tengan. Con la medida fr se reparten equitativamente el espacio, fraccionandolo */
+
+
+/*     grid-auto-flow: column;
+
+    grid-auto-columns: 200px;
+ */
+}
+
+div {
+    border: 1px solid black;
+}
+
+div:nth-child(2) {
+    background-color: blue;
+
+    grid-column: span 2;
+}
+
+div:nth-child(8) {
+    background-color: aqua;
+
+    grid-column:2/4 ; /* Si no se le especifica que se expanda se mueve a donde se le mande y empuja a los demas elementos */
+}
+
+div:nth-child(10) {
+    background-color: rebeccapurple;
+    grid-row: 5 / span 2;
+}
+
+div:nth-child(19) {
+    background-color: springgreen;
+    order: -1;
+}
+
+div:nth-child(18) {
+    background-color: magenta ;
+    grid-column-start: 2 ;
+    grid-column-end: 4;
+}
+
+div:nth-child(12) {
+    background-color: yellow;
+    grid-column: 1/-1;
+}
+

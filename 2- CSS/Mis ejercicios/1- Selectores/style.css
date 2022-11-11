@@ -1,0 +1,108 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin:0px;
+}
+h1{
+    background-color:lightsteelblue;
+    color:white;
+    margin:0px;
+    text-align: center;
+    padding:15px;
+}
+
+section{
+    margin-left: 20px;
+}
+
+h2 {
+    color:lightskyblue;
+}
+
+/* main section:first-child li:nth-child(5){
+    font-weight: bold;
+} 
+
+Esta forma no seria del todo apropiada porque aunque aplicaria el estilo, seria mas optimo contar con una clase en la que poder aplicar este mismo estilo en futuras actualizaciones sin modificar o sumergirse tanto en el codigo
+
+*/
+
+.importante{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ul {
+    list-style: circle;
+}
+
+section ul li {
+    padding:.5rem;
+}
+
+li:not(li:first-child) {
+    margin-top: 5px;
+}
+
+thead{
+    background-color: lightsteelblue;
+    color:white;
+}
+
+/* tbody tr:first-child td, tbody tr:nth-child(3) td{
+    background-color: lightblue;
+    text-align: center;
+}
+
+tbody tr:last-child td, tbody tr:nth-child(2) td{
+    background-color: lightskyblue;
+} 
+
+Estas formas anteriores no serian del todo apropiadas porque aunque apliquen el estilo, no seria escalable
+
+*/
+
+tbody tr:nth-child(odd) td{
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) td{
+    background-color: lightblue;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) th {
+    background-color: lightblue;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) th {
+    background-color: lightsteelblue;
+    text-align: center;
+}
+
+thead th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right:25px;
+    text-align: center;
+}
+
+tbody th{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+#descanso {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}

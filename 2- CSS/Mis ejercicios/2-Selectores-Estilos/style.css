@@ -1,0 +1,79 @@
+html {
+    font-size: 30px;
+}
+
+.lista {
+    list-style: none;
+}
+
+/* 1. Haz que el último li tenga fondo azul. Especifica ese fondo azul usando valores RGB */ 
+
+.lista :last-child {
+    background-color: rgb(0, 0, 255);
+}
+
+/* 2. Haz que los li impares tengan el texto subrayado. Haz que el subrayado sea de color verde. */
+
+.lista li:nth-child(odd) {
+    text-decoration: underline green;
+}
+
+/* 3. Haz que todos los elementos de la lista aparezcan en una sola línea en lugar de unos debajo de otros y que tengan una separación de 10 píxeles entre unos y otros. */
+/* Flex */
+.lista {
+    display: flex;
+    gap: 10px;
+}
+
+/* Sin flex */
+/* .lista li {
+    display: inline-block;
+    margin: 10px;
+} */
+
+/* 4. Haz que al final de cada li aparezca un emoji **diferente** sin modificar el html. */
+.lista li:first-child::after {
+    content: "🧑‍🦱";
+}
+
+.lista li:nth-child(2)::after {
+    content: "😄";
+}
+
+.lista li:nth-child(3)::after {
+    content: "🇸🇨";
+}
+
+.lista li:nth-child(4)::after {
+    content: "⭐";
+}
+
+.lista li:nth-child(5)::after {
+    content: "❤️";
+}
+
+.lista li:last-child::after {
+    content: "💔";
+}
+
+/* 5. Haz que el li que tiene texto en inglés tenga el tipo de letra del doble de tamaño que los otros y en mayúsculas. */
+[lang="en"] {
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+/* SEGUNDA LISTA */
+
+/* 1. En lugar de tener puntos a la izquierda de los elementos tenga números romanos. */
+/* 2. Excepto "A Coruña" que no debe tener número romano a la izquierda. */
+#provincias :not(li:nth-child(2)) {
+    list-style: upper-roman;
+}
+
+/* #provincias {
+    list-style-type: upper-roman;
+}
+
+#provincias li:nth-child(2) {
+    list-style: initial;
+} */

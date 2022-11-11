@@ -1,0 +1,60 @@
+@import url(encabezado.css);
+
+.encabezado{
+    color:blue;
+}
+
+h1.encabezado{
+    color:aqua;
+}
+
+h1{
+    color:green;
+}
+
+h1{
+    color:red;
+}
+
+p#rojo{
+    color: blue !important;
+}
+
+/*ESPECIFIDAD*/
+
+p {
+    /* Especifidad es de 1*/
+}
+
+.clase {
+    /* Especifidad es de 10*/
+}
+
+p.clase {
+    /*Especifidad es de 11*/
+}
+
+#id {
+    /*Especifidad es de 100*/
+}
+
+p#id {
+    /*Especifidad es de 101*/
+}
+
+
+/*HERENCIA*/
+
+ul {
+    color:red;
+    text-decoration: initial;
+}
+
+li {
+    color:initial;
+}
+
+* {
+    text-decoration: none;
+}
+

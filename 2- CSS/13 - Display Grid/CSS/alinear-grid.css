@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(2, 150px);
+
+    /* justify-content: space-evenly;  *//*  toda la cuadricula (la caja) */ /* horizontal */
+    /* align-content: center; */  /*  toda la cuadricula (la caja) */ /* vertical */
+
+
+    /* SHORTHUNT */
+    place-content: center space-around; /* vertical (align content) y horizontal (justify content)*/
+
+    /* justify-items: end; */ /* contenido horizontal */
+    /* align-items: start; */ /* contenido en vertical */
+
+
+    /* SHORTHUNT */
+    place-items: baseline end;
+}
+
+div {
+    border: 1px solid black;
+}
+
+div:nth-child(6) {
+    justify-self: center;
+    align-self: end;
+}
+
+
+/* SHORTHUNT */
+div:nth-child(9) {
+    place-self: center start; /* vertical y horizontal */
+}
+
+div:nth-child(2) {
+    font-size: 2rem;
+}

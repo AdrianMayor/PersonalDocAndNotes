@@ -1,0 +1,26 @@
+
+section#principal.important.initial::first-letter{
+    background-color: thistle;
+}
+/*Al principio para no complicarse mucho la vida se puede crear una clase especifica tipo "miclase" y a correr*/
+
+main section.important p{
+    color:green;
+}
+
+main > p{
+    font-size: 10px;
+}
+
+no es lo mismo que 
+
+main p{
+
+}
+
+p + a {
+    color:red ;
+    text-decoration: underline;
+}
+/*Selecciona el primer enlace despues de un parrafo*/
+

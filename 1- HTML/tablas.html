@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Adrian Mayor">
+        <meta name="description" content="Pagina sobre tablas"/>
+        <meta name="keywords" content="HTML, tablas, videos"/> <!--Palabras clave para el buscador-->
+        <title>Tablas</title>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Tablas</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Tablas basicas</h2>
+
+                <table border="1"> <!--Se ve en rojo porque esto es CSS y deberia ser hecho en CSS-->
+                    <tr>
+                        <th>Titulo 1</th>
+                        <th>Titulo 2</th>
+                        <th>Titulo 3</th>
+                        <th>Titulo 4</th>
+                    </tr>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Tablas complejos</h2>
+                <table border="1"> <!--Se ve en rojo porque esto es CSS y deberia ser hecho en CSS-->
+                    <tr>
+                        <th>Titulo 1</th>
+                        <th colspan="2">Titulo 2</th>
+                        <th>Titulo 3</th>
+                        <th>Titulo 4</th>
+                    </tr>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td rowspan="2">Dato 2</td>
+                        <td>Dato 3</td>
+                        <td rowspan="2" colspan="2">Dato 4</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <section>
+                <h2>Tablas Semanticas</h2>
+                <table border="1"> <!--Se ve en rojo porque esto es CSS y deberia ser hecho en CSS-->
+                    <caption>
+                        Descripcion de la tabla
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Titulo</th>
+                            <th>Titulo</th>
+                            <th>Titulo</th>
+                            <th>Titulo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Titulo</th>
+                            <td>Dato</td>
+                            <td>Dato</td>
+                            <td>Dato</td>
+                            <td>Dato</td>
+                        </tr>
+                        <tr>
+                            <th>Titulo</th>
+                            <td>Dato</td>
+                            <td>Dato</td>
+                            <td>Dato</td>
+                            <td>Dato</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Pie de tabla</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+d    </body>
+</html>

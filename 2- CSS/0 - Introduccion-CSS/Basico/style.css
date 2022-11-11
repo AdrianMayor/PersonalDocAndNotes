@@ -1,0 +1,155 @@
+/* la singaxis de css se compone de: propiedad: valor agrupadas en bloques precedidas por un selector aplicadas a una etiqueta;
+
+background-color: purple;
+font-size: 20px;*/
+
+@import "./typography.css";
+
+/*SELECTORES SIMPLES: */
+
+/*Selector por etiqueta; coge todos los elementos de la etiqueta especificada*/
+
+h1{
+    background-color: purple;
+    color:yellow;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* * {
+    background-color: purple;
+    color:yellow;
+} 
+
+El asterisco aplica el mismo formato a todas las etiquetas*/
+
+
+/*Selector por class; coge todos los elementos con dicha clase*/
+.class
+
+.important{
+    font-weight: bold;
+    font-size: 25px;
+}
+.hl{
+    text-decoration: underline;
+}
+
+/*Selector por id; coge todos los elementos con identificacion*/
+#id
+
+#main-navigation{
+    background-color: lightcoral;
+
+}
+
+/* SELECTORES POR ATRIBUTOS*/
+
+/* Selectores por atributo, coge todos los elementos que lleven dicho atributo*/
+
+[atributo]
+
+[lang]{
+    color:green;
+}
+[lang="gl"]{
+    color: red;
+}
+[data-importancia]{
+    font-weight: bold;
+    color:steelblue
+}
+[data-importancia="alta"]{
+    font-size: 50px;
+}
+[data-importancia="baja"]{
+    font-size: 8px;
+}
+[atributo^="http"] {
+
+} 
+/* "^=" quiere decir "Que empiece por" */
+/* "$=" quiere decir "Que termine por" */
+/* "*=" quiere decir "Que contengan " */
+
+/* PSEUDO CLASES */
+
+/* se aplican en base a los estados */
+/* se pueden combibar entre ellos de forma casi infinita, influyendose unos a otros*/
+
+
+a:hover {
+    background-color: yellowgreen;
+}
+a:visited{
+    color: bisque;
+}
+a:link{
+    color:peru;
+}
+a:active{
+    font-size: 30px;
+}
+
+li:first-child{
+    font-weight: bold;
+    color:blueviolet
+}
+li:last-child{
+    font-weight:bold;
+    color: black;
+}
+li:nth-child(3){
+    font-size: 12px;
+}
+li:only-child{
+    color:fuchsia;
+    font-size: 22px;
+}
+
+li:not(.important){
+    background-color: aquamarine;
+}
+li:not(:last-child){
+    background-color: gold;
+}
+
+/*PSEUDO ELEMENTOS*/
+/* se pueden combibar entre ellos de forma casi infinita, influyendose unos a otros*/
+
+p::first-letter{
+    font-size: 100px;
+    color:brown;
+}
+p::first-line{
+    background-color: aqua;
+}
+::selection{
+    background-color: lightcoral;
+}
+
+h2::after{
+    content: "<<"
+}
+
+h2::before{
+    content:">>"
+}
+
+[lang="es"]::before{
+    content:"🇪🇸";
+    font-size: 60px;
+}
+[lang="en"]::before{
+    content:"🤫";
+}
+
+/* COMBINAR SELECTORES */
+
+h1,h2{
+    color:green;
+}
+

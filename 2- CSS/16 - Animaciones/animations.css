@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+    animation-fill-mode: forwards;
+
+    animation-iteration-count:3;
+
+    animation-direction:reverse;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    margin:2rem 1rem;
+    font-size: 3rem;
+
+    animation: rainbow 2s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rainbow {
+    0% {
+        color:rojo;
+    }
+
+    25% {
+        color: orange;
+    }
+
+    50% {
+        color:yellow;
+    }
+
+    75% {
+        color: green;
+    }
+
+    100% {
+        color:blue;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Flex</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Personaliza tu hamburguesa</legend>
+
+        <fieldset>
+          <legend>Ingredientes</legend>
+
+          <label for="queso">Queso</label>
+          <input type="checkbox" name="queso" id="queso" />
+
+          <label for="pimiento">Pimiento</label>
+          <input type="checkbox" name="pimiento" id="pimiento" />
+
+          <label for="cebolla">Cebolla</label>
+          <input type="checkbox" name="cebolla" id="cebolla" />
+
+          <label for="jamon">Jamón</label>
+          <input type="checkbox" name="jamon" id="jamon" />
+
+          <label for="huevo">Huevo</label>
+          <input type="checkbox" name="huevo" id="huevo" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Tamaño</legend>
+
+          <label for="peq">Pequeña</label>
+          <input type="radio" name="tamano" id="peq" value="peque" />
+
+          <label for="med">Mediana</label>
+          <input type="radio" name="tamano" id="med" value="mediana" />
+
+          <label for="gr">Grande</label>
+          <input type="radio" name="tamano" id="gr" value="grande" />
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos de entrega</legend>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required />
+
+        <label for="dire">Direccion</label>
+        <input type="text" name="direction" id="dire" required />
+
+        <label for="tel">Teléfono</label>
+        <input type="tel" name="telefono" id="tel" required />
+
+        <label for="comments">Instrucciones especiales</label>
+        <textarea name="comments" id="comments"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Método de pago</legend>
+        <select name="pago" id="pago">
+          <option value="efectivo">Pago efectivo</option>
+          <option value="tarjeta">Tarjeta de crédito</option>
+          <option value="bitcoin">Bitcoin</option>
+          <option value="paypal">PayPal</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+      <!-- <input type="submit" name="enviar" value="Enviar" /> -->
+    </form>
+  </body>
+</html>

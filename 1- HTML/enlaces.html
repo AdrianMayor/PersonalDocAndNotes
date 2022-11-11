@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <tittle>Enlaces</tittle>
+    </head>
+    <body>
+        <header id="header"> 
+            <h2> cabecera </h2>
+        </header>
+        <main>
+            <h1>Enlaces</h1>
+
+            <section id="enlacesInternos">
+                <h2">Enlaces internos</h2>
+                <p>Hay 2 tipos de enlaces internos</p>
+                <dl>
+                    <dt> rutas absolutas</dt>
+                    <dd>Estas van desde la raiz de la carpeta. Ej: /dia 1/listas.html</dd>
+                    <a href="/listas.html">Ruta absoluta</a>
+                    <dt>rutas relativas</dt>
+                    <dd>estas se indican desde donde se encuentra el archivo en la que las escribimos. Con un . indicamos la carpeta donde nos encontramos y con ../ indicamos la carpeta superior</dd>
+                    <a href="./listas.html">Ruta Relativa</a>
+                </dl>
+    
+                <h3>Enlaces ancla</h3>
+               <p>enlace al <a href="#header">header</a></p>
+               <li>
+                <strong>address</strong>: Etiqueta que contiene una dirección u otra
+                forma de contacto. Ej:
+                <address>
+                  <a href="mailto:cesar.alvite.linan@hackaboss.com"
+                    >cesar.alvite.linan@hackaboss.com</a
+                  >
+                  <a href="tel:+34999888777">Llámame :D</a>
+                </address>
+              </li>
+            </section>
+
+            <section id="enlacesExternos">
+                <h2>enlaces externos</h2>
+                <p>estos nos llevan a otras webs</p>
+                <ul>
+                    <li><a href="https:www.google.com/" target="_blank">Google <!-- el target es para que se abra en pestaña nueva--></a></li>
+                    <li><a href="https:www.jujel.com/" target="_blank" tittle="Jujel">Jujel</a></li>
+
+                </ul>
+            </section>
+            <section>
+                <h2>Propiedad etiqueta a</h2>
+
+                <li>Se puede añadir el atributo download a la etiqueta a para poder descargar el archivo</li>
+                <a href="" download>Descargar</a>
+            </section>
+        </main>
+    </body>
+</html>

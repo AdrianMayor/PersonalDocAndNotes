@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    background-color: #C4C4C4;
+    text-align: center;
+
+    border-bottom: 1px solid black;
+}
+
+
+
+/* BODY */
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+main {
+    display:grid;
+        
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 2fr 0.5fr ;
+    grid-template-areas: 
+        "seccion1 seccion2 aside"
+        "footer footer aside";
+
+}
+
+main section p {
+    margin: 1rem auto;
+}
+
+.section1 {
+    grid-area: seccion1;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.section2 {
+    grid-area: seccion2;
+    align-self: center;
+}
+
+aside {
+    background-color: #A2A0F6;
+
+    grid-area: aside;
+}
+
+.section3 {
+    background-color: #73E7F6;
+
+    grid-area: footer;
+
+    text-align: center;
+}
+
+main section h2 {
+    font-size: 2.5rem;
+    
+}
+
+main section, main aside {
+    padding: 1.5rem;
+}
+
+main aside {
+    line-height: 2rem;
+}
+
+main aside h3 {
+    font-size: 2rem;
+}
+
+main aside figure img{
+    border-radius: 50%;
+    width: 100%;
+    
+    
+}
+
+main aside figure {
+    align-self: center;
+}
+
+@media (max-width: 700px){
+    main {
+            
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2fr 2fr 1fr ;
+        grid-template-areas: 
+            "seccion1 seccion1"
+            "seccion2 seccion2"
+            "footer aside";
+    
+    }
+
+    .section1 {
+        align-self:initial;
+    }
+    
+    .section2 {
+        align-self: center;
+    }
+    
+    main aside figure img{
+        display: none;
+        
+        
+    }
+}
+    
