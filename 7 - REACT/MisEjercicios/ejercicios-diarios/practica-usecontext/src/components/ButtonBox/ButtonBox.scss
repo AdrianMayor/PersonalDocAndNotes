@@ -1,0 +1,18 @@
+.buttonBox {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 50px);
+  list-style: none;
+  gap: 0.5rem;
+  border: grey solid 1px;
+  border-radius: 15px;
+  /* width: fit-content; */
+  padding: 10px;
+  button {
+    padding: 20px;
+    width: 100%;
+  }
+  &.mainButtonPanel {
+    grid-template-columns: repeat(4, 50px);
+  }
+}

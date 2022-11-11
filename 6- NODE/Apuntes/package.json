@@ -1,0 +1,22 @@
+{
+  "name": "segunda-vuelta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./1 - Introduccion Server/server.js"
+  },
+  "keywords": [],
+  "author": "Adrian",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "dotenv": "^16.0.1",
+    "minimist": "^1.2.6"
+  }
+}

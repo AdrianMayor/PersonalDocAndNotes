@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "6a8d03a7-8777-4332-a104-6660456cfbb6",
+		"name": "Diario de Viajes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"david95\",\n    \"email\": \"david95@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/users",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"david95@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/users/login",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Own User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_user_2}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/users",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entries",
+			"item": [
+				{
+					"name": "New Entry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_user_3}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Mi visita a la ciudad de Lugo",
+									"type": "text"
+								},
+								{
+									"key": "place",
+									"value": "Lugo",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Unas pirámides estupendas",
+									"type": "text"
+								},
+								{
+									"key": "photo_A",
+									"type": "file",
+									"src": "/home/david/Downloads/pictures/WhatsApp Image 2022-02-14 at 4.45.28 PM.jpeg",
+									"disabled": true
+								},
+								{
+									"key": "photo_B",
+									"type": "file",
+									"src": "/home/david/Downloads/pictures/userimage.jpeg",
+									"disabled": true
+								},
+								{
+									"key": "photo_C",
+									"type": "file",
+									"src": "/home/david/Downloads/pictures/HACK A BO.png",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/entries",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"entries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Entries",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_user_3}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{server}}/entries",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"entries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Entry",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_user_2}}"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/entries/6",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"entries",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Entry",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_user_3}}"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/entries/6",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"entries",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vote Entry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_user_2}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/entries/6/votes",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"entries",
+								"6",
+								"votes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": ""
+		},
+		{
+			"key": "token_user_2",
+			"value": ""
+		},
+		{
+			"key": "token_user_3",
+			"value": ""
+		}
+	]
+}

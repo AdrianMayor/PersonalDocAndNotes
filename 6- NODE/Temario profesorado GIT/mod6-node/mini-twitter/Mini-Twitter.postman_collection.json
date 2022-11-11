@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "bf4bef2b-8aa0-4fd4-af9f-0b11296ea731",
+		"name": "Mini Twitter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"jose45\",\n    \"email\": \"jose45@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/users",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"jose45@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/users/login",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Own User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_user_2}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/users",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_user_2}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "david97",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "david97@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/home/david/Downloads/pictures/userimage.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/users",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tweets",
+			"item": [
+				{
+					"name": "New Tweet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_user_2}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "text",
+									"value": "Soy el usuario 2",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/david/Downloads/pictures/Tutorías - Protocolo  (1).jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/tweets",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Tweets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_user_3}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{server}}/tweets?keyword=ola",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"tweets"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "ola"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tweet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_user_2}}"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/tweets/1",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"tweets",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Tweet",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_user_2}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/tweets/5",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"tweets",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like Tweet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_user_3}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/tweets/2/likes",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"tweets",
+								"2",
+								"likes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": ""
+		},
+		{
+			"key": "token_user_2",
+			"value": ""
+		},
+		{
+			"key": "token_user_3",
+			"value": ""
+		}
+	]
+}

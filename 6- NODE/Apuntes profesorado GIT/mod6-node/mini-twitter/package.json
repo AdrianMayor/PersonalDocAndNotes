@@ -1,0 +1,20 @@
+{
+  "name": "mini-twitter",
+  "version": "1.0.0",
+  "description": "Este ejercicio consiste en crear una API que simule el funcionamiento de una aplicación similar a Twitter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "mysql2": "^2.3.3"
+  }
+}

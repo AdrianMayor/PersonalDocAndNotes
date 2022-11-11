@@ -1,0 +1,24 @@
+$ npm i nodemon -D -> Se instala nodemon
+
+vamos al package.json y modificamos: 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+por 
+
+  "scripts": {
+    "dev": "nodemon ./server/server.js" -> dev : direccion de donde tenemos el fichero server
+  },
+
+
+
+$ npm run dev
+
+__
+
+Por si hay algun problema a la hora de iniciar el servidor (EADDRISUE)
+killall node -> mata todos los procesos de node
+
+Si no funciona, comando mas potente
+sudo fuser -k 4000/tcp

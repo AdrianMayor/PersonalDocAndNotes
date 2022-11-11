@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "9d64e9ff-77f0-45c9-a813-9692b50fb746",
+		"name": "minitwitter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "First test: Listado de usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Informacion de usuario concreto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/46",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listado tweets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/tweets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tweets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listado tweets de usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/tweets?keyword=gato&author=pepebenavente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tweets"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "gato"
+						},
+						{
+							"key": "author",
+							"value": "pepebenavente"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Middleware error test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear tweet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Hola mundo, esto es un tweet\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tweets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tweets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
